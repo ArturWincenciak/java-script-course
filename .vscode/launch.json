@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Lanch 'section-01/06-setup-ide/file.js'",
+            "name": "01/06 Setup IDE",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -16,7 +16,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Lanch 'section-01/08-variable/file.js'",
+            "name": "01/08 Variable",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -25,11 +25,20 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Lanch 'section-01/10-types/file.js'",
+            "name": "01/10 Types",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/section-01/10-types/file.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "01/11 Functions",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/section-01/11-functions/file.js"
         }
     ]
 }
