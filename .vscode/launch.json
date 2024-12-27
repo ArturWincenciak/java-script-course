@@ -48,6 +48,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/section-01/13-number/file.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "01/17 String",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/section-01/17-string/file.js"
         }
     ]
 }

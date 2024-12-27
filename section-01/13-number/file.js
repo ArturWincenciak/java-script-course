@@ -10,7 +10,7 @@ console.log(sum) // 125 - Now it's a number addition
 
 var product = textualNumber * 2
 console.log(product) // 246 - It's strange, isn't it?
-// It is because of the multiplication operator, which implicitly casts the string to a number
+// It is because of the multiplication operator, which implicitly casts the string to a number 4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
 
 // Try parse not a number
 let notANumber = 'abc'
