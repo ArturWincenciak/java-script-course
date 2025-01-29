@@ -57,6 +57,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/section-01/17-string/file.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "01/22 Array",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/section-02/22-array/file.js"
         }
     ]
 }
