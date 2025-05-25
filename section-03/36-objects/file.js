@@ -28,3 +28,27 @@ console.log(user.money);
 console.log(user["# some strange property"]);
 console.log(user["# not exists property"]); // undefined
 
+const cashMachine = {
+  balance: 0,
+  showBalance: function () {
+    console.log("You have " + this.balance + " PLN");
+  },
+  deposit: function (cash) {
+    this.balance += cash;
+  },
+  withdraw: function (cach) {
+    if (cach > this.balance) {
+      console.log("You do not have enough many");
+      return;
+    }
+
+    this.balance -= cach;
+  }
+};
+
+cashMachine.showBalance();
+cashMachine.deposit(100);
+cashMachine.showBalance();
+cashMachine.withdraw(150);
+cashMachine.withdraw(90);
+cashMachine.showBalance();
