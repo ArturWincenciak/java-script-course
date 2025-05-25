@@ -49,20 +49,20 @@ console.log(numbers.includes(23)) // false - 23 is not in the array
 console.log(numbers.includes(14)) // true - 14 is in the array
 
 // if all elements is positive
-console.log(numbers.every(n => { // every means all elements must satisfy the condition
+console.log(numbers.every(n => { // by every means all elements must satisfy the condition
     console.log("Checking if " + n + " is positive")
     return n > 0
 })) // true - all elements are positive
 
 // if any element is negative
-console.log(numbers.some(n => { // some means at least one element must satisfy the condition
+console.log(numbers.some(n => { // by some means at least one element must satisfy the condition
     console.log("Checking if " + n + " is negative")
     return n < 0
 })) // false - all elements are positive
 
 numbers.unshift(-10) // add -10 at the beginning
 // if any element is negative
-console.log(numbers.some(n => { // some means at least one element must satisfy the condition
+console.log(numbers.some(n => { // by some means at least one element must satisfy the condition
     console.log("Checking if " + n + " is negative")
     return n < 0
 })) // true - at least one element is negative
@@ -188,16 +188,16 @@ console.log(rest) // rest of the fruits
 // default values
 const values = [1, 2]
 const [v1 = 100, v2 = 200, v3 = 300] = values
-console.log(v1, v2, v3) // result is 1, 2, 300 because v3 is not in the array and has a default value
+console.log(v1, v2, v3) // the result is 1, 2, 300 because v3 is not in the array and has a default value
 
 // without spread operator 
 const someNumbers = [1, 2, 3]
-const result = someNumbers // result is a reference to the original array
+const result = someNumbers // the result is a reference to the original array
 result[0] = 100
 console.log(result) // [100, 2, 3]
 console.log(someNumbers) // [100, 2, 3] - original array is also changed because result is a reference to the original array
 
-// to avoid changing the original array use spread operator
+// to avoid changing the original array, use spread operator
 const anotherNumbers = [10, 20, 30]
 const anotherResult = [...anotherNumbers] // anotherResult is a copy of anotherNumbers
 anotherResult[0] = 1000
